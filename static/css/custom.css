@@ -1,7 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root,
+[data-bs-theme=light] {
+    --bs-primary: #07889b;
+}
+
+[data-bs-theme=dark] {
+    color-scheme: dark;
+    --bs-primary: #089db3;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    font-family: "Lora", Arial, "Noto Sans", "Droid Sans", "Segoe UI", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", "Lora", Arial, "Noto Sans", "Droid Sans", "Segoe UI", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--bs-primary);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:not([href]):not([class]) {
+    text-decoration: none;
+}
+
+a:not([href]):not([class]):hover {
+    color: inherit;
+}
+
+
 #avatar-img {
     border-radius: 5%;
+    width: 160px;
+    display: block;
+    margin: auto;
 }
 
 .sub-title {
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.btn {
+    border-radius: 0 !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.my-name {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.bio-text p {
+    text-align: justify;
+}
+
+.news-date {
+    font-weight: 700 !important;
+}
+
+
+.ace-editor-div {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+div#preview-text {
+    height: 30rem;
+    overflow: auto;
+}
+
+.box-title .title {
+    font-size: 1.4rem;
+}
+
+.title,
+.my-name,
+.news-year,
+.news-date {
+    font-weight: 800;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.font-size-small {
+    font-size: .85em;
+}
+
+.font-size-9,
+.authors,
+.venue,
+.supplementary {
+    font-size: .9rem;
+}
+
+.font-size-9375 {
+    font-size: .9375rem;
+}
+
+.fa-ul {
+    margin-left: 1.5em !important;
+}
+
+input,
+.alert {
+    border-radius: 0 !important;
+}
+
+.login-form-wrapper {
+    max-width: 90%;
+    width: 300px;
+}
+
+.authors u,
+.supplementary a,
+.underline-dotted {
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+}
+
+.hover-pointer:hover {
+    cursor: pointer;
+}
+
+.authors {
+    margin-bottom: 0.25rem;
+}
+
+.avatar-wrapper img {
+    width: 160px;
+    display: block;
+    margin: auto;
+}
+
+.pub-title {
+    font-weight: 600;
+}
+
+#news-hide {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#news-hide.active {
+    opacity: 1;
+    height: auto;
+}
+
+#news-box {
+    height: 300px;
+    overflow: auto;
 }
