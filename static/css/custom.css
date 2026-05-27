@@ -37,6 +37,14 @@
     --bg: #ffffff;
     --fg: #212529;
     --muted: rgba(0, 0, 0, 0.55);
+    --border: rgba(0, 0, 0, 0.12);
+
+    /* Chip palette — darker shades for sufficient contrast on white */
+    --chip-a-star: #d97706; /* amber-600  */
+    --chip-a:      #059669; /* emerald-600 */
+    --chip-q1:     #7c3aed; /* violet-600 */
+    --chip-award:  #e11d48; /* rose-600   */
+    --chip-demo:   #64748b; /* slate-500  */
 }
 
 [data-bs-theme="dark"] {
@@ -45,6 +53,16 @@
     --bg: #212529;
     --fg: #dee2e6;
     --muted: rgba(255, 255, 255, 0.55);
+    --border: rgba(255, 255, 255, 0.13);
+
+    /* Chip palette — bright shades for sufficient WCAG AA contrast on
+       the dark bg. q1 and award sit right at the threshold with the
+       -400 stops, so we use -300 for those two. */
+    --chip-a-star: #fbbf24; /* amber-400  */
+    --chip-a:      #34d399; /* emerald-400 */
+    --chip-q1:     #c4b5fd; /* violet-300 */
+    --chip-award:  #fda4af; /* rose-300   */
+    --chip-demo:   #94a3b8; /* slate-400  */
 }
 
 /* ============================================================
@@ -285,33 +303,56 @@ button {
 
 .font-size-9,
 .authors,
-.venue,
-.supplementary {
+.venue {
     font-size: .9rem;
 }
 
 /* ============================================================
    Site-specific: publications
+
+   Single-column card per paper. Title sits at the top, then authors
+   on a tighter line, then a flex row holding the venue and any tier
+   / award / demo chips (so they share a line and wrap together on
+   mobile), then a flex row of supplementary links with enough
+   padding to meet the WCAG 24×24 touch target on touch devices.
+   Papers are separated by a faint bottom border instead of an <hr>.
    ============================================================ */
+.bio-text a,
 .authors u,
-.supplementary a {
+.pub-links a {
     text-decoration-style: dotted;
     text-decoration-line: underline;
 }
 
-.authors {
-    margin-bottom: 0.25rem;
+.pub {
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.pub:first-child {
+    padding-top: 0;
+}
+
+.pub:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
 }
 
 .pub-title {
     font-weight: 600;
 }
 
-.pub-chips {
+.authors {
+    margin: 0.2rem 0 0;
+}
+
+.venue-line {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35em;
-    margin-top: 0.3em;
+    align-items: center;
+    gap: 0.35rem 0.5rem;
+    margin-top: 0.15rem;
+    font-size: 0.9rem;
 }
 
 .pub-tier {
@@ -323,30 +364,30 @@ button {
     letter-spacing: 0.01em;
 }
 
-.pub-tier-a-star {
-    color: #f59e0b;
-    background: rgba(245, 158, 11, 0.16);
-}
-
-.pub-tier-a {
-    color: #10b981;
-    background: rgba(16, 185, 129, 0.16);
-}
-
-.pub-tier-q1 {
-    color: #8b5cf6;
-    background: rgba(139, 92, 246, 0.16);
-}
-
-.pub-award {
-    color: #f43f5e;
-    background: rgba(244, 63, 94, 0.16);
-}
-
+.pub-tier-a-star { color: var(--chip-a-star); background: color-mix(in srgb, var(--chip-a-star) 16%, transparent); }
+.pub-tier-a     { color: var(--chip-a);      background: color-mix(in srgb, var(--chip-a)      16%, transparent); }
+.pub-tier-q1    { color: var(--chip-q1);     background: color-mix(in srgb, var(--chip-q1)     16%, transparent); }
+.pub-award      { color: var(--chip-award);  background: color-mix(in srgb, var(--chip-award)  16%, transparent); }
 .pub-demo,
-.teaching-role {
-    color: #94a3b8;
-    background: rgba(148, 163, 184, 0.16);
+.teaching-role  { color: var(--chip-demo);   background: color-mix(in srgb, var(--chip-demo)   16%, transparent); }
+
+.pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.pub-links a {
+    /* vertical padding pushes hit area to ~30px high, clearing the
+       WCAG 2.5.5 24×24 minimum without changing visible alignment. */
+    padding-block: 0.3rem;
+}
+
+.pub-links-sep {
+    color: var(--muted);
 }
 
 /* ============================================================
