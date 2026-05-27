@@ -1,0 +1,16 @@
+# Teaching entries, newest first. `text` is rendered as markdown, so a
+# nested bullet list under an entry is just an indented `- ` block.
+
+- period: 2025-Present
+  text: |
+    Courses at VNU-UET
+    - 2025-2026-2: **Programming Methodology**, **Machine Learning**
+    - 2025-2026-1: **Programming for Data Processing**, **Computational Thinking**
+
+- period: "2022"
+  text: |
+    TA for the **Automated Knowledge Base Construction** course at Saarland University
+
+- period: 2016-2018
+  text: |
+    TA for several courses (**Basics of Programming**, **Data Structures and Algorithms**) at VNU-UET

@@ -1,0 +1,14 @@
+name: Tuan-Phong Nguyen
+alternate_name: Nguyễn Tuấn Phong
+
+# Rendered as markdown. Use kramdown's {:target="_blank"} attribute for
+# links that should open in a new tab.
+about: |
+  Tuan-Phong Nguyen (Nguyễn Tuấn Phong) is a lecturer at VNU University of
+  Engineering and Technology. His research interests include Large Language
+  Models and Knowledge Bases. He holds a Ph.D. from the
+  [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/){:target="_blank"},
+  a M.Sc. from
+  [Saarland University](https://saarland-informatics-campus.de/en/){:target="_blank"},
+  and a B.Sc. from
+  [Vietnam National University Hanoi](https://uet.vnu.edu.vn/){:target="_blank"}.

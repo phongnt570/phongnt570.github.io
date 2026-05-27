@@ -1,0 +1,5 @@
+<ul>
+    {%- for entry in site.data.services %}
+    <li>{{ entry.year }}: {{ entry.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+    {%- endfor %}
+</ul>

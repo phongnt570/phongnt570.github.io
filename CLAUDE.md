@@ -6,9 +6,15 @@ Personal academic website for Tuan-Phong Nguyen, served at **tuan-phong.com** vi
 
 ## Structure
 
-- [index.html](index.html) — page layout (head, bio, contact, services), with a Liquid `{% for %}` loop where the publications list lives. Has Jekyll front matter at the top so Liquid is processed.
-- [_data/publications.yml](_data/publications.yml) — every paper as a YAML entry (title, url, authors with `highlight`, venue, optional `acceptance_rate` / `award`, links). Add a new paper here, not in HTML.
-- [_includes/publication.html](_includes/publication.html) — Liquid template that renders one entry from `_data/publications.yml`.
+- [index.html](index.html) — page layout. Almost all content is pulled from `_data/` via `{% include %}` calls; the file is mostly structural HTML + Liquid hooks. Has Jekyll front matter at the top so Liquid is processed.
+- [_data/](_data/) — all content lives here:
+  - [publications.yml](_data/publications.yml) — every paper (title, url, authors with `highlight`, venue, optional `acceptance_rate` / `award`, links).
+  - [bio.yml](_data/bio.yml) — name + about paragraph (rendered as markdown).
+  - [contact.yml](_data/contact.yml) — Contact table rows. `email` rows render with an inline `@` icon between user and domain.
+  - [services.yml](_data/services.yml) — academic service entries, newest first.
+  - [teaching.yml](_data/teaching.yml) — teaching entries.
+  - [icons.yml](_data/icons.yml) — SVG viewBox + path data for the icons used across the page.
+- [_includes/](_includes/) — Liquid templates: `icon.html` (renders one SVG from `icons.yml`), `publication.html`, `contact.html`, `services.html`, `teaching.html`.
 - [_config.yml](_config.yml) — Jekyll config. Empty theme; UTF-8 encoding; excludes for local-only files.
 - [static/css/custom.css](static/css/custom.css) — site-specific styles on top of Bootstrap
 - [static/css/bootstrap.min.css](static/css/bootstrap.min.css), [static/js/bootstrap.bundle.min.js](static/js/bootstrap.bundle.min.js) — Bootstrap 5 vendored

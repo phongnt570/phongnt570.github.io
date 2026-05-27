@@ -1,0 +1,18 @@
+<table class="mt-1">
+    <tbody>
+        {%- for row in site.data.contact %}
+        <tr>
+            <td class="text-center">
+                <span class="mr-1">{% include icon.html name=row.icon size=row.size %}</span>
+            </td>
+            <td>
+                {%- if row.email %}
+                <span class="mr-1">{{ row.email.user }}{% include icon.html name="at" size="xs" %}{{ row.email.domain }}</span>
+                {%- else %}
+                <span class="mr-1"><a href="{{ row.url }}" target="_blank">{{ row.label }}</a></span>
+                {%- endif %}
+            </td>
+        </tr>
+        {%- endfor %}
+    </tbody>
+</table>

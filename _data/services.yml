@@ -1,0 +1,26 @@
+# Academic service entries, newest first. `text` is rendered as markdown
+# (so **bold** works for venue names).
+
+- year: 2026
+  text: |
+    Reviewer for **ACL Rolling Review (ARR)**, **WebConf**, **ESWC**, **EACL (Demo track)**
+
+- year: 2025
+  text: |
+    Reviewer for **WebConf**, **ESWC**, **EMNLP (Demo track)**, **IJCNLP-AACL 2025 (Demo track)**, **IEEE KSE**, Organizer of **4th LM-KBC Challenge @ ISWC 2025**
+
+- year: 2024
+  text: |
+    Reviewer for **WebConf**, **ACL Rolling Review (ARR)**, **ISWC**, Organizer of **3rd LM-KBC Challenge @ ISWC 2024**
+
+- year: 2023
+  text: |
+    Reviewer for **ESWC**, **ACL (Demo Track)**
+
+- year: 2022
+  text: |
+    Reviewer for **ISWC**, Organizer of **1st LM-KBC Challenge @ ISWC 2022**
+
+- year: 2021
+  text: |
+    Reviewer for **Semantic Web Journal**
