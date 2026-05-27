@@ -6,10 +6,11 @@ Personal academic website for Tuan-Phong Nguyen, served at **tuan-phong.com** vi
 
 ## Structure
 
-- [index.html](index.html) — page layout. Almost all content is pulled from `_data/` via `{% include %}` calls; the file is mostly structural HTML + Liquid hooks. Has Jekyll front matter at the top so Liquid is processed.
+- [index.html](index.html) — body content only. Uses `layout: default`; all `<head>`, meta tags, JSON-LD, and `<body>` shell come from the layout. Almost everything inside is `{% include %}` calls.
+- [_layouts/default.html](_layouts/default.html) — full HTML shell. Pulls title, meta description, OG/Twitter cards, JSON-LD (Person schema with worksFor/alumniOf/sameAs) from `_data/bio.yml`. Also holds the dark-mode bootstrap script and the `toggleMode()` function.
 - [_data/](_data/) — all content lives here:
   - [publications.yml](_data/publications.yml) — every paper (title, url, authors with `highlight`, venue, optional `acceptance_rate` / `award`, links).
-  - [bio.yml](_data/bio.yml) — name + about paragraph (rendered as markdown).
+  - [bio.yml](_data/bio.yml) — name + descriptions (long for OG / JSON-LD, short for Twitter), `affiliation` (worksFor), `alumni` list (alumniOf), `social` URLs (sameAs), and the `about` paragraph rendered on the page.
   - [contact.yml](_data/contact.yml) — Contact table rows. `email` rows render with an inline `@` icon between user and domain.
   - [services.yml](_data/services.yml) — academic service entries, newest first.
   - [teaching.yml](_data/teaching.yml) — teaching entries.

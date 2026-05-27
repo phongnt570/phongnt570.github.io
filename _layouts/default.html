@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.data.bio.name }}</title>
+    <link rel="icon" href="{{ '/static/img/favicon.svg' | relative_url }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preload" href="{{ '/static/fonts/lora-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            if (saved === 'light' || saved === 'dark') {
+                document.documentElement.setAttribute('data-bs-theme', saved);
+            }
+        })();
+    </script>
+
+    {%- assign og_image = site.url | append: '/static/img/phong.jpg' -%}
+    <meta name="description" content="{{ site.data.bio.description }}">
+    <meta name="author" content="{{ site.data.bio.name }}">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="{{ site.url }}/">
+    <meta property="og:title" content="{{ site.data.bio.name }}">
+    <meta property="og:description" content="{{ site.data.bio.description }}">
+    <meta property="og:image" content="{{ og_image }}">
+    <meta property="og:image:width" content="864">
+    <meta property="og:image:height" content="864">
+    <meta property="og:image:alt" content="{{ site.data.bio.name }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="profile:first_name" content="{{ site.data.bio.first_name }}">
+    <meta property="profile:last_name" content="{{ site.data.bio.last_name }}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.data.bio.name }}">
+    <meta name="twitter:description" content="{{ site.data.bio.description_short }}">
+    <meta name="twitter:image" content="{{ og_image }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/bootstrap.min.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/custom.css' | relative_url }}">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": {{ site.data.bio.name | jsonify }},
+        "alternateName": {{ site.data.bio.alternate_name | jsonify }},
+        "url": {{ site.url | jsonify }},
+        "image": {{ og_image | jsonify }},
+        "jobTitle": {{ site.data.bio.job_title | jsonify }},
+        "worksFor": {
+            "@type": "CollegeOrUniversity",
+            "name": {{ site.data.bio.affiliation.name | jsonify }},
+            "url": {{ site.data.bio.affiliation.url | jsonify }}
+        },
+        "alumniOf": [
+            {%- for a in site.data.bio.alumni %}
+            {
+                "@type": "CollegeOrUniversity",
+                "name": {{ a.name | jsonify }},
+                "url": {{ a.url | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
+            {%- endfor %}
+        ],
+        "sameAs": {{ site.data.bio.social | jsonify }}
+    }
+    </script>
+</head>
+
+<body>
+    {{ content }}
+
+    <script>
+        function toggleMode() {
+            var html = document.documentElement;
+            var newTheme = html.getAttribute('data-bs-theme') === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-bs-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+    </script>
+</body>
+
+</html>

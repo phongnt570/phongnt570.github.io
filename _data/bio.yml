@@ -1,8 +1,43 @@
 name: Tuan-Phong Nguyen
 alternate_name: Nguyễn Tuấn Phong
+first_name: Tuan-Phong
+last_name: Nguyen
+job_title: Lecturer
 
-# Rendered as markdown. Use kramdown's {:target="_blank"} attribute for
-# links that should open in a new tab.
+# Long form — used in <meta name="description">, og:description, JSON-LD
+description: >-
+  Tuan-Phong Nguyen (Nguyễn Tuấn Phong) is a computer scientist based in
+  Hanoi, Vietnam. He holds a PhD in Computer Science from the Max Planck
+  Institute for Informatics, where he works on commonsense knowledge
+  acquisition.
+
+# Short form — used in twitter:description
+description_short: >-
+  Computer scientist based in Hanoi, Vietnam. PhD from Max Planck Institute
+  for Informatics; works on commonsense knowledge acquisition.
+
+# Current employer — schema.org worksFor in JSON-LD
+affiliation:
+  name: VNU University of Engineering and Technology
+  url: https://uet.vnu.edu.vn/
+
+# Past degrees — schema.org alumniOf in JSON-LD
+alumni:
+  - name: Max Planck Institute for Informatics
+    url: https://www.mpi-inf.mpg.de/
+  - name: Saarland University
+    url: https://saarland-informatics-campus.de/en/
+  - name: Vietnam National University Hanoi
+    url: https://uet.vnu.edu.vn/
+
+# schema.org sameAs in JSON-LD — official profile URLs for this person
+social:
+  - https://scholar.google.com/citations?user=JXZlcpwAAAAJ
+  - https://www.linkedin.com/in/tuanphongnguyen/
+  - https://github.com/phongnt570
+
+# Bio paragraph rendered on the page (markdown). Use kramdown's
+# {:target="_blank"} attribute for links that should open in a new tab.
 about: |
   Tuan-Phong Nguyen (Nguyễn Tuấn Phong) is a lecturer at VNU University of
   Engineering and Technology. His research interests include Large Language

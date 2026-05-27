@@ -1,222 +1,120 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Tuan-Phong Nguyen</title>
-    <link rel="icon" href="./static/img/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="preload" href="./static/fonts/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
-
-    <script>
-        (function () {
-            var saved = localStorage.getItem('theme');
-            if (saved === 'light' || saved === 'dark') {
-                document.documentElement.setAttribute('data-bs-theme', saved);
-            }
-        })();
-    </script>
-
-    <meta name="description"
-        content="Tuan-Phong Nguyen (Nguyễn Tuấn Phong) is a computer scientist based in Hanoi, Vietnam. He holds a PhD in Computer Science from the Max Planck Institute for Informatics, where he works on commonsense knowledge acquisition.">
-    <meta name="author" content="Tuan-Phong Nguyen">
-
-    <meta property="og:type" content="profile">
-    <meta property="og:url" content="https://tuan-phong.com/">
-    <meta property="og:title" content="Tuan-Phong Nguyen">
-    <meta property="og:description"
-        content="Tuan-Phong Nguyen (Nguyễn Tuấn Phong) is a computer scientist based in Hanoi, Vietnam. He holds a PhD in Computer Science from the Max Planck Institute for Informatics, where he works on commonsense knowledge acquisition.">
-    <meta property="og:image" content="https://tuan-phong.com/static/img/phong.jpg">
-    <meta property="og:image:width" content="864">
-    <meta property="og:image:height" content="864">
-    <meta property="og:image:alt" content="Tuan-Phong Nguyen">
-    <meta property="og:locale" content="en_US">
-    <meta property="profile:first_name" content="Tuan-Phong">
-    <meta property="profile:last_name" content="Nguyen">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Tuan-Phong Nguyen">
-    <meta name="twitter:description"
-        content="Computer scientist based in Hanoi, Vietnam. PhD from Max Planck Institute for Informatics; works on commonsense knowledge acquisition.">
-    <meta name="twitter:image" content="https://tuan-phong.com/static/img/phong.jpg">
-
-    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./static/css/custom.css">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Tuan-Phong Nguyen",
-        "alternateName": "Nguyễn Tuấn Phong",
-        "url": "https://tuan-phong.com",
-        "image": "https://tuan-phong.com/static/img/phong.jpg",
-        "jobTitle": "Lecturer",
-        "worksFor": {
-            "@type": "CollegeOrUniversity",
-            "name": "VNU University of Engineering and Technology",
-            "url": "https://uet.vnu.edu.vn/"
-        },
-        "alumniOf": [
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "Max Planck Institute for Informatics",
-                "url": "https://www.mpi-inf.mpg.de/"
-            },
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "Saarland University",
-                "url": "https://saarland-informatics-campus.de/en/"
-            },
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "Vietnam National University Hanoi",
-                "url": "https://uet.vnu.edu.vn/"
-            }
-        ],
-        "sameAs": [
-            "https://scholar.google.com/citations?user=JXZlcpwAAAAJ",
-            "https://www.linkedin.com/in/tuanphongnguyen/",
-            "https://github.com/phongnt570"
-        ]
-    }
-    </script>
-</head>
-
-<body>
-    <div>
-        <div class="home-body-wrapper mt-5 mb-3">
-            <div class="home-main-content container-xl px-4">
-                <div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 box-wrapper">
-                            <div id="infobox">
+<div>
+    <div class="home-body-wrapper mt-5 mb-3">
+        <div class="home-main-content container-xl px-4">
+            <div>
+                <div class="row">
+                    <div class="col-12 col-lg-4 box-wrapper">
+                        <div id="infobox">
 
 
-                                <div id="contact-wrapper" class="box">
-                                    <div class="row">
+                            <div id="contact-wrapper" class="box">
+                                <div class="row">
 
-                                        <div class="col-12">
-                                            <div class="avatar-wrapper">
-                                                <img id="avatar-img" src="./static/img/phong.webp"
-                                                    alt="Tuan-Phong Nguyen" width="160" height="160"
-                                                    fetchpriority="high" decoding="async">
-                                            </div>
-
-                                            <div class="my-2 text-center">
-                                                <h1 class="my-name me-1">{{ site.data.bio.name }}</h1>
-
-                                            </div>
+                                    <div class="col-12">
+                                        <div class="avatar-wrapper">
+                                            <img id="avatar-img" src="{{ '/static/img/phong.webp' | relative_url }}"
+                                                alt="{{ site.data.bio.name }}" width="160" height="160"
+                                                fetchpriority="high" decoding="async">
                                         </div>
 
-                                        <div class="col-12 mt-3">
-                                            <div id="info-box-table-app" class="font-size-small"><span
-                                                    class="fw-bold h6">Contact</span>
-                                                {% include contact.html %}
-                                            </div>
+                                        <div class="my-2 text-center">
+                                            <h1 class="my-name me-1">{{ site.data.bio.name }}</h1>
                                         </div>
-
-                                        <div class="col-12 mt-3">
-                                            <div class="font-size-9">
-                                                <span class="fw-bold h6">About</span>
-
-                                                <div class="bio-text">
-                                                    {{ site.data.bio.about | markdownify }}
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="text-center">
-                                                <button onclick="toggleMode()" class="btn btn-sm" title="Switch mode"
-                                                    type="button">
-                                                    <span class="text-secondary" id="toggle-model-text">
-                                                        {% include icon.html name="sun" class="sun-icon" %}
-                                                        {% include icon.html name="moon" class="moon-icon" %}
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </div>
-
                                     </div>
-                                </div>
-                            </div>
 
-                            <div class="d-md-none">
-                                <hr>
+                                    <div class="col-12 mt-3">
+                                        <div id="info-box-table-app" class="font-size-small">
+                                            <span class="fw-bold h6">Contact</span>
+                                            {% include contact.html %}
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-3">
+                                        <div class="font-size-9">
+                                            <span class="fw-bold h6">About</span>
+                                            <div class="bio-text">
+                                                {{ site.data.bio.about | markdownify }}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="text-center">
+                                            <button onclick="toggleMode()" class="btn btn-sm" title="Switch mode"
+                                                type="button">
+                                                <span class="text-secondary" id="toggle-model-text">
+                                                    {% include icon.html name="sun" class="sun-icon" %}
+                                                    {% include icon.html name="moon" class="moon-icon" %}
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-12 col-lg-8 box-wrapper">
-
-                            <div id="publications" class="box">
-                                <div class="box-title">
-                                    <h2 class="title">Publications</h2>
-                                </div>
-                                <hr>
-
-                                <div class="box-content">
-                                    <ul class="list-unstyled">
-                                        {% for pub in site.data.publications %}
-                                        {% include publication.html pub=pub %}
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div id="services" class="box mt-5">
-                                <div class="box-title">
-                                    <h2 class="title">Academic service</h2>
-                                </div>
-
-                                <hr>
-
-                                <div class="box-content">
-                                    {% include services.html %}
-                                </div>
-                            </div>
-
-                            <div id="teaching" class="box mt-5">
-                                <div class="box-title">
-                                    <h2 class="title">Teaching</h2>
-                                </div>
-
-                                <hr>
-
-                                <div class="box-content">
-                                    {% include teaching.html %}
-                                </div>
-                            </div>
-
+                        <div class="d-md-none">
+                            <hr>
                         </div>
                     </div>
 
-                    <hr>
+                    <div class="col-12 col-lg-8 box-wrapper">
 
-                    <div id="footer" class="text-secondary font-size-9">
-                        <span>Copyright © 2020-{{ 'now' | date: '%Y' }}</span>
-                        <span>•</span>
-                        <span>Tuan-Phong Nguyen</span>
+                        <div id="publications" class="box">
+                            <div class="box-title">
+                                <h2 class="title">Publications</h2>
+                            </div>
+                            <hr>
+
+                            <div class="box-content">
+                                <ul class="list-unstyled">
+                                    {% for pub in site.data.publications %}
+                                    {% include publication.html pub=pub %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="services" class="box mt-5">
+                            <div class="box-title">
+                                <h2 class="title">Academic service</h2>
+                            </div>
+
+                            <hr>
+
+                            <div class="box-content">
+                                {% include services.html %}
+                            </div>
+                        </div>
+
+                        <div id="teaching" class="box mt-5">
+                            <div class="box-title">
+                                <h2 class="title">Teaching</h2>
+                            </div>
+
+                            <hr>
+
+                            <div class="box-content">
+                                {% include teaching.html %}
+                            </div>
+                        </div>
+
                     </div>
-
                 </div>
+
+                <hr>
+
+                <div id="footer" class="text-secondary font-size-9">
+                    <span>Copyright © 2020-{{ 'now' | date: '%Y' }}</span>
+                    <span>•</span>
+                    <span>{{ site.data.bio.name }}</span>
+                </div>
+
             </div>
         </div>
     </div>
-
-    <script>
-        function toggleMode() {
-            var html = document.documentElement;
-            var newTheme = html.getAttribute('data-bs-theme') === 'light' ? 'dark' : 'light';
-            html.setAttribute('data-bs-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        }
-    </script>
-</body>
-
-</html>
+</div>
