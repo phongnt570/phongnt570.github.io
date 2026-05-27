@@ -7,7 +7,7 @@ Personal academic website for Tuan-Phong Nguyen, served at **tuan-phong.com** vi
 ## Structure
 
 - [index.html](index.html) — body content only. Uses `layout: default`; all `<head>`, meta tags, JSON-LD, and `<body>` shell come from the layout. Almost everything inside is `{% include %}` calls.
-- [_layouts/default.html](_layouts/default.html) — full HTML shell. Pulls title, meta description, OG/Twitter cards, JSON-LD (Person schema with worksFor/alumniOf/sameAs) from `_data/bio.yml`. Also holds the dark-mode bootstrap script and the `toggleMode()` function.
+- [_layouts/default.html](_layouts/default.html) — full HTML shell. Pulls title, meta description, OG/Twitter cards, JSON-LD (Person schema with worksFor/alumniOf/sameAs) from `_data/bio.yml`. Also holds the dark-mode FOUC-prevention script and the `toggleMode()` function.
 - [_data/](_data/) — all content lives here:
   - [publications.yml](_data/publications.yml) — every paper (title, url, authors with `highlight`, venue, optional `acceptance_rate` / `award`, links).
   - [bio.yml](_data/bio.yml) — name + descriptions (long for OG / JSON-LD, short for Twitter), `affiliation` (worksFor), `alumni` list (alumniOf), `social` URLs (sameAs), and the `about` paragraph rendered on the page.
@@ -17,8 +17,7 @@ Personal academic website for Tuan-Phong Nguyen, served at **tuan-phong.com** vi
   - [icons.yml](_data/icons.yml) — SVG viewBox + path data for the icons used across the page.
 - [_includes/](_includes/) — Liquid templates: `icon.html` (renders one SVG from `icons.yml`), `publication.html`, `contact.html`, `services.html`, `teaching.html`.
 - [_config.yml](_config.yml) — Jekyll config. Empty theme; UTF-8 encoding; excludes for local-only files.
-- [static/css/custom.css](static/css/custom.css) — site-specific styles on top of Bootstrap
-- [static/css/bootstrap.min.css](static/css/bootstrap.min.css), [static/js/bootstrap.bundle.min.js](static/js/bootstrap.bundle.min.js) — Bootstrap 5 vendored
+- [static/css/custom.css](static/css/custom.css) — the only stylesheet. Hand-rolled: `@font-face` declarations, theme tokens, a small reset, a Bootstrap-compatible grid/utility subset (so existing class names like `row`, `col-*`, `mb-3`, `me-1`, `fw-bold`, `d-md-none` keep working), and site-specific styles. No framework — Bootstrap was removed.
 - [static/fonts/](static/fonts/) — self-hosted Lora woff2 subsets (latin, vietnamese, italic-latin)
 - [static/img/](static/img/) — `phong.webp` (avatar served to browsers), `phong.jpg` (original used as `og:image`), `favicon.svg`
 - Icons are inline SVG (no FontAwesome).
