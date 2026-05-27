@@ -1,3 +1,25 @@
+- id: publication_19
+  title: 'Epistemic Twins: Enabling a Symbolic Science of Language Model Knowledge'
+  url: https://zenodo.org/records/19910437/files/Epistemic_Twins.pdf
+  authors:
+  - name: Simon Razniewski
+    highlight: false
+  - name: Shrestha Ghosh
+    highlight: false
+  - name: Luca Giordano
+    highlight: false
+  - name: Yujia Hu
+    highlight: false
+  - name: Josua Kowalzik
+    highlight: false
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  venue: preprint, 2026
+  venue_style: italic
+  links:
+  - label: paper
+    url: https://zenodo.org/records/19910437/files/Epistemic_Twins.pdf
+
 - id: publication_18
   title: 'Mining the Mind: What 100M Beliefs Reveal About Frontier LLM Knowledge'
   url: https://arxiv.org/pdf/2510.07024
