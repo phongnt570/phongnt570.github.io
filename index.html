@@ -107,7 +107,7 @@
                                             </div>
 
                                             <div class="my-2 text-center">
-                                                <span class="my-name mr-1">{{ site.data.bio.name }}</span>
+                                                <h1 class="my-name me-1">{{ site.data.bio.name }}</h1>
 
                                             </div>
                                         </div>
@@ -156,21 +156,22 @@
 
                             <div id="publications" class="box">
                                 <div class="box-title">
-                                    <span class="title">Publications</span>
+                                    <h2 class="title">Publications</h2>
                                 </div>
                                 <hr>
 
                                 <div class="box-content">
                                     <ul class="list-unstyled">
-                                                                                {% for pub in site.data.publications %}
+                                        {% for pub in site.data.publications %}
                                         {% include publication.html pub=pub %}
                                         {% endfor %}
+                                    </ul>
                                 </div>
                             </div>
 
                             <div id="services" class="box mt-5">
                                 <div class="box-title">
-                                    <span class="title">Academic service</span>
+                                    <h2 class="title">Academic service</h2>
                                 </div>
 
                                 <hr>
@@ -182,7 +183,7 @@
 
                             <div id="teaching" class="box mt-5">
                                 <div class="box-title">
-                                    <span class="title">Teaching</span>
+                                    <h2 class="title">Teaching</h2>
                                 </div>
 
                                 <hr>
@@ -207,7 +208,6 @@
             </div>
         </div>
     </div>
-    <script src="./static/js/bootstrap.bundle.min.js"></script>
 
     <script>
         function toggleMode() {

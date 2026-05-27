@@ -43,29 +43,15 @@ body {
     font-family: "Lora", Arial, "Noto Sans", "Droid Sans", "Segoe UI", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Poppins", "Lora", Arial, "Noto Sans", "Droid Sans", "Segoe UI", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 a {
     text-decoration: none;
     background-color: transparent;
     color: var(--bs-primary);
 }
 
-a:not([href]):not([class]) {
+a:hover {
     text-decoration: none;
 }
-
-a:not([href]):not([class]):hover {
-    color: inherit;
-}
-
 
 #avatar-img {
     border-radius: 5%;
@@ -99,22 +85,12 @@ a:not([href]):not([class]):hover {
     display: inline-block;
 }
 
-.sub-title {
-    font-weight: 600;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 .btn {
     border-radius: 0 !important;
 }
 
-a:hover {
-    text-decoration: none;
-}
-
-
 .my-name {
-    font-weight: 700;
+    margin: 0;
     font-size: 1.4rem;
 }
 
@@ -122,19 +98,13 @@ a:hover {
     text-align: justify;
 }
 
-.news-date {
-    font-weight: 700 !important;
-}
-
-
 .box-title .title {
+    margin: 0;
     font-size: 1.4rem;
 }
 
 .title,
-.my-name,
-.news-year,
-.news-date {
+.my-name {
     font-weight: 800;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -150,57 +120,16 @@ a:hover {
     font-size: .9rem;
 }
 
-.font-size-9375 {
-    font-size: .9375rem;
-}
-
-.fa-ul {
-    margin-left: 1.5em !important;
-}
-
-input,
-.alert {
-    border-radius: 0 !important;
-}
-
 .authors u,
-.supplementary a,
-.underline-dotted {
+.supplementary a {
     text-decoration-style: dotted;
     text-decoration-line: underline;
-}
-
-.hover-pointer:hover {
-    cursor: pointer;
 }
 
 .authors {
     margin-bottom: 0.25rem;
 }
 
-.avatar-wrapper img {
-    width: 160px;
-    display: block;
-    margin: auto;
-}
-
 .pub-title {
     font-weight: 600;
-}
-
-#news-hide {
-    transition: opacity 1s ease-out;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-}
-
-#news-hide.active {
-    opacity: 1;
-    height: auto;
-}
-
-#news-box {
-    height: 300px;
-    overflow: auto;
 }
