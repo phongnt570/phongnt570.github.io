@@ -16,10 +16,12 @@ No build step, no SSG, no `package.json`. Edit HTML/CSS directly and commit.
 
 ## Preview locally
 
-Open `index.html` directly in a browser, or:
+In the Claude app, click **Preview** → pick **"Preview site"** ([.claude/launch.json](.claude/launch.json)). It serves the repo at `http://127.0.0.1:4894` using the local `.conda` Python.
+
+Or run manually:
 
 ```sh
-python -m http.server 8000
+.conda/bin/python -m http.server 4894
 ```
 
 The `.conda/` directory at the repo root is a local Python 3.14 env — activate or call `.conda/bin/python` directly if you need Python for anything. It is git-ignored.
