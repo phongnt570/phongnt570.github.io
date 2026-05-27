@@ -58,10 +58,6 @@ a {
     color: var(--bs-primary);
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 a:not([href]):not([class]) {
     text-decoration: none;
 }
