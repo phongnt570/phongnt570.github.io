@@ -35,6 +35,5 @@ The `.conda/` directory at the repo root is a local Python 3.14 env — activate
 
 ## Known cleanup candidates
 
-- FontAwesome (~4 MB) loads the full set; only ~10 icons are used. Subsetting or swapping for inline SVG would save bandwidth.
-- Lora font is loaded from Google Fonts; could be self-hosted.
-- [index.html](index.html) is 930 lines with significant repetition in the publications list — a static-site generator (Astro/11ty/Jekyll) would make adding papers easier, but the user has not committed to migrating.
+- The publications list in [index.html](index.html) is large and repetitive; a static-site generator (Astro/11ty/Jekyll) would make adding papers easier, but the user has not committed to migrating.
+- Google Analytics could be swapped for a privacy-friendly alternative (Plausible, GoatCounter).

@@ -87,6 +87,18 @@ a:not([href]):not([class]):hover {
     height: 0.75em;
 }
 
+.moon-icon {
+    display: none;
+}
+
+[data-bs-theme="light"] .sun-icon {
+    display: none;
+}
+
+[data-bs-theme="light"] .moon-icon {
+    display: inline-block;
+}
+
 .sub-title {
     font-weight: 600;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
