@@ -81,17 +81,6 @@ a:hover {
 }
 
 
-.ace-editor-div {
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-
-div#preview-text {
-    height: 30rem;
-    overflow: auto;
-}
-
 .box-title .title {
     font-size: 1.4rem;
 }
@@ -126,11 +115,6 @@ div#preview-text {
 input,
 .alert {
     border-radius: 0 !important;
-}
-
-.login-form-wrapper {
-    max-width: 90%;
-    width: 300px;
 }
 
 .authors u,
