@@ -1,0 +1,266 @@
+- id: publication_18
+  title: 'Mining the Mind: What 100M Beliefs Reveal About Frontier LLM Knowledge'
+  url: https://arxiv.org/pdf/2510.07024
+  authors:
+  - name: Shrestha Ghosh
+    highlight: false
+  - name: Luca Giordano
+    highlight: false
+  - name: Yujia Hu
+    highlight: false
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  venue: arXiv preprint, 2025
+  venue_style: italic
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2510.07024
+  - label: website
+    url: https://gptkb.org/
+- id: publication_16
+  title: 'GPTKB v1.5: A Massive Knowledge Base for Exploring Factual LLM Knowledge'
+  url: https://arxiv.org/pdf/2507.05740
+  authors:
+  - name: Yujia Hu
+    highlight: false
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Shrestha Ghosh
+    highlight: false
+  - name: Moritz Müller
+    highlight: false
+  - name: Simon Razniewski
+    highlight: false
+  venue: AAAI 2026 (demo paper)
+  venue_style: italic
+  acceptance_rate: 28%
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2507.05740
+  - label: website
+    url: https://gptkb.org/
+- id: publication_17
+  title: Introducing GPTKB to the Semantic Web
+  authors:
+  - name: Yujia Hu
+    highlight: false
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Shrestha Ghosh
+    highlight: false
+  - name: Moritz Müller
+    highlight: false
+  - name: Simon Razniewski
+    highlight: false
+  venue: ISWC 2025 (demo paper)
+  venue_style: italic
+  award: best demo award
+  links:
+  - label: paper
+    url: https://ceur-ws.org/Vol-4085/paper61.pdf
+  - label: website
+    url: https://gptkb.org/
+- id: publication_15
+  title: Enabling LLM Knowledge Analysis via Extensive Materialization
+  url: https://arxiv.org/pdf/2411.04920
+  authors:
+  - name: Yujia Hu
+    highlight: false
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Shrestha Ghosh
+    highlight: false
+  - name: Simon Razniewski
+    highlight: false
+  venue: ACL 2025
+  venue_style: bold
+  acceptance_rate: 20%
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2411.04920
+  - label: code
+    url: https://github.com/Knowledge-aware-AI/GPTKB
+  - label: website
+    url: https://gptkb.org/
+- id: publication_14
+  title: Large-Scale Acquisition of Refined Commonsense Knowledge
+  url: https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/40027/1/tuan-phong-nguyen-phd-thesis.pdf
+  authors:
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  venue: Doctoral Thesis
+  venue_style: italic
+  links:
+  - label: text
+    url: https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/40027/1/tuan-phong-nguyen-phd-thesis.pdf
+  - label: website
+    url: https://commonsense.scads.ai/
+- id: publication_12
+  title: Cultural Commonsense Knowledge for Intercultural Dialogues
+  url: https://arxiv.org/pdf/2402.10689.pdf
+  authors:
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  - name: Gerhard Weikum
+    highlight: false
+  venue: CIKM 2024
+  venue_style: bold
+  acceptance_rate: 23%
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2402.10689.pdf
+  - label: code
+    url: https://github.com/cultural-csk/mango
+  - label: demo
+    url: https://commonsense.scads.ai/mango/
+- id: publication_9
+  title: Extracting Cultural Commonsense Knowledge at Scale
+  url: https://arxiv.org/pdf/2210.07763.pdf
+  authors:
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  - name: Aparna Varde
+    highlight: false
+  - name: Gerhard Weikum
+    highlight: false
+  venue: WWW 2023
+  venue_style: bold
+  acceptance_rate: 19%
+  award: best paper nomination
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2210.07763.pdf
+  - label: code
+    url: https://github.com/cultural-csk/candle
+  - label: demo
+    url: https://commonsense.scads.ai/candle/
+  - label: video
+    url: https://youtu.be/F4eElgjE4R8
+- id: publication_10
+  title: UnCommonSense in Action! Informative Negations for Commonsense Knowledge Bases
+  url: https://dl.acm.org/doi/10.1145/3539597.3573027
+  authors:
+  - name: Hiba Arnaout
+    highlight: false
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  - name: Gerhard Weikum
+    highlight: false
+  venue: WSDM 2023 (demo paper)
+  venue_style: italic
+  links:
+  - label: paper
+    url: https://dl.acm.org/doi/10.1145/3539597.3573027
+- id: publication_7
+  title: Refined Commonsense Knowledge from Large-Scale Web Contents
+  url: https://arxiv.org/pdf/2112.04596.pdf
+  authors:
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  - name: Julien Romero
+    highlight: false
+  - name: Gerhard Weikum
+    highlight: false
+  venue: IEEE TKDE 2023
+  venue_style: bold
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2112.04596.pdf
+  - label: code
+    url: https://github.com/phongnt570/large-scale-csk-extraction
+  - label: demo
+    url: https://commonsense.scads.ai/ascentpp/
+- id: publication_8
+  title: Materialized Knowledge Bases from Commonsense Transformers
+  url: https://arxiv.org/pdf/2112.14815.pdf
+  authors:
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  venue: CSRR workshop @ ACL 2022
+  venue_style: italic
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2112.14815.pdf
+  - label: demo
+    url: https://commonsense.scads.ai/comet-resource/
+- id: publication_6
+  title: 'Inside ASCENT: Exploring a Deep Commonsense Knowledge Base and its Usage in Question Answering'
+  url: https://arxiv.org/pdf/2105.13662.pdf
+  authors:
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  - name: Gerhard Weikum
+    highlight: false
+  venue: ACL 2021 (demo paper)
+  venue_style: italic
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2105.13662.pdf
+  - label: demo
+    url: https://commonsense.scads.ai/ascent/
+- id: publication_5
+  title: Advanced Semantics for Commonsense Knowledge Extraction
+  url: https://arxiv.org/pdf/2011.00905.pdf
+  authors:
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  - name: Gerhard Weikum
+    highlight: false
+  venue: WWW 2021
+  venue_style: bold
+  acceptance_rate: 21%
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2011.00905.pdf
+  - label: code
+    url: https://github.com/phongnt570/ascent
+  - label: demo
+    url: https://commonsense.scads.ai/ascent/
+- id: publication_4
+  title: An Experimental Investigation of Part-Of-Speech Taggers for Vietnamese
+  url: https://arxiv.org/pdf/2206.06992.pdf
+  authors:
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Quoc-Tuan Truong
+    highlight: false
+  - name: Xuan-Nam Nguyen
+    highlight: false
+  - name: Anh-Cuong Le
+    highlight: false
+  venue: VNU-JCSCE 2016
+  venue_style: italic
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2206.06992.pdf
+- id: publication_3
+  title: A Hybrid Approach to Vietnamese Word Segmentation
+  url: https://www.researchgate.net/profile/Tuan_Phong_Nguyen/publication/311980397_A_hybrid_approach_to_Vietnamese_word_segmentation/links/5a9507e3a6fdccecff0771ff/A-hybrid-approach-to-Vietnamese-word-segmentation.pdf
+  authors:
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Anh-Cuong Le
+    highlight: false
+  venue: IEEE RIVF 2016
+  venue_style: italic
+  links:
+  - label: paper
+    url: https://www.researchgate.net/profile/Tuan_Phong_Nguyen/publication/311980397_A_hybrid_approach_to_Vietnamese_word_segmentation/links/5a9507e3a6fdccecff0771ff/A-hybrid-approach-to-Vietnamese-word-segmentation.pdf
+  - label: code
+    url: https://github.com/phongnt570/UETsegmenter

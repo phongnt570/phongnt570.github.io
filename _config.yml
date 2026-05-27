@@ -1,0 +1,17 @@
+title: Tuan-Phong Nguyen
+url: https://tuan-phong.com
+
+encoding: UTF-8
+
+# We ship our own HTML/CSS — no default theme.
+theme:
+
+# Files at the repo root that are not part of the published site
+exclude:
+  - .conda
+  - .claude
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

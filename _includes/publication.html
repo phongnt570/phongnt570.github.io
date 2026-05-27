@@ -1,0 +1,44 @@
+<li class="mb-3" id="{{ include.pub.id }}">
+    <div class="row">
+        <div class="col-12 col-md-10">
+            <div>
+                <a href="{{ include.pub.url | default: '#' }}"{% if include.pub.url %} target="_blank"{% endif %}>
+                    <span class="pub-title">{{ include.pub.title }}</span>
+                </a>
+            </div>
+            <div class="authors">
+                <span>
+                    {%- for author in include.pub.authors -%}
+                        {% if author.highlight %}<u>{{ author.name }}</u>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+                    {%- endfor -%}
+                </span>
+            </div>
+            <div class="venue">
+                <span class="{% if include.pub.venue_style == 'bold' %}fw-bold{% elsif include.pub.venue_style == 'italic' %}fst-italic{% endif %}">
+                    {{ include.pub.venue }}
+                </span>
+                {% if include.pub.acceptance_rate %}
+                <span> - Acceptance rate: {{ include.pub.acceptance_rate }}</span>
+                {% endif %}
+                {% if include.pub.award %}
+                <br>
+                <span class="fw-bold">
+                    <span class="text-danger">*</span>
+                    <span>{{ include.pub.award }}</span>
+                </span>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-2">
+            <div class="supplementary text-md-center">
+                {% for link in include.pub.links %}
+                <div class="d-inline d-md-block">
+                    {% unless forloop.first %}<span class="d-inline d-md-none">·</span>{% endunless %}
+                    <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <hr>
+</li>

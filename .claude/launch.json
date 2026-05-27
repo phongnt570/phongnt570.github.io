@@ -3,8 +3,8 @@
     "configurations": [
         {
             "name": "Preview site",
-            "runtimeExecutable": ".conda/bin/python",
-            "runtimeArgs": ["-m", "http.server", "4894", "--bind", "127.0.0.1"],
+            "runtimeExecutable": "/opt/homebrew/opt/ruby/bin/bundle",
+            "runtimeArgs": ["exec", "jekyll", "serve", "--host", "127.0.0.1", "--port", "4894", "--livereload"],
             "port": 4894
         }
     ]
