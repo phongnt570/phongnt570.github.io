@@ -1,5 +1,9 @@
-<ul>
-    {%- for entry in site.data.teaching %}
-    <li>{{ entry.period }}: {{ entry.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+<ul class="teaching-list list-unstyled mb-0">
+    {%- for c in site.data.teaching %}
+    <li class="mb-2">
+        {%- if c.role %}<span class="teaching-role">{{ c.role }}</span> {% endif -%}
+        <span class="teaching-course fw-bold">{{ c.course }}</span>
+        <span class="teaching-meta">— {{ c.institution }}, {{ c.period }}</span>
+    </li>
     {%- endfor %}
 </ul>

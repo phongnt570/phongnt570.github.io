@@ -1,5 +1,6 @@
-<ul>
-    {%- for entry in site.data.services %}
-    <li>{{ entry.year }}: {{ entry.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
-    {%- endfor %}
-</ul>
+{%- for group in site.data.services %}
+<div class="service-group{% unless forloop.first %} mt-3{% endunless %}">
+    <div class="service-role fw-bold">{{ group.role }}</div>
+    <div class="service-items">{{ group.items | join: ' · ' }}</div>
+</div>
+{%- endfor %}

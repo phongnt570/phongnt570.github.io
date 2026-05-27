@@ -1,16 +1,33 @@
-# Teaching entries, newest first. `text` is rendered as markdown, so a
-# nested bullet list under an entry is just an indented `- ` block.
+# One entry per course. `role` defaults to instructor; set it to "TA"
+# (or anything else) when the user was not the primary instructor.
 
-- period: 2025-Present
-  text: |
-    Courses at VNU-UET
-    - 2025-2026-2: **Programming Methodology**, **Machine Learning**
-    - 2025-2026-1: **Programming for Data Processing**, **Computational Thinking**
+- course: Programming Methodology
+  institution: VNU-UET
+  period: 2025–2026-II
 
-- period: "2022"
-  text: |
-    TA for the **Automated Knowledge Base Construction** course at Saarland University
+- course: Machine Learning
+  institution: VNU-UET
+  period: 2025–2026-II
 
-- period: 2016-2018
-  text: |
-    TA for several courses (**Basics of Programming**, **Data Structures and Algorithms**) at VNU-UET
+- course: Programming for Data Processing
+  institution: VNU-UET
+  period: 2025–2026-I
+
+- course: Computational Thinking
+  institution: VNU-UET
+  period: 2025–2026-I
+
+- course: Automated Knowledge Base Construction
+  institution: Saarland University
+  period: 2022
+  role: TA
+
+- course: Basics of Programming
+  institution: VNU-UET
+  period: 2016–2018
+  role: TA
+
+- course: Data Structures and Algorithms
+  institution: VNU-UET
+  period: 2016–2018
+  role: TA

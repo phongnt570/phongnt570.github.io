@@ -170,7 +170,26 @@ a:hover {
     background: rgba(244, 63, 94, 0.16);
 }
 
-.pub-demo {
+.pub-demo,
+.teaching-role {
     color: #94a3b8;
     background: rgba(148, 163, 184, 0.16);
+}
+
+.teaching-role {
+    display: inline-block;
+    padding: 0 0.45em;
+    border-radius: 0.4em;
+    font-size: 0.78em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    vertical-align: 0.05em;
+}
+
+.teaching-meta {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+[data-bs-theme="light"] .teaching-meta {
+    color: rgba(0, 0, 0, 0.55);
 }
