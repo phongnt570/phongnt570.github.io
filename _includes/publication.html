@@ -17,17 +17,18 @@
                 <span class="{% if include.pub.venue_style == 'bold' %}fw-bold{% elsif include.pub.venue_style == 'italic' %}fst-italic{% endif %}">
                     {{ include.pub.venue }}
                 </span>
-                {% if include.pub.acceptance_rate %}
-                <span> - Acceptance rate: {{ include.pub.acceptance_rate }}</span>
-                {% endif %}
-                {% if include.pub.award %}
-                <br>
-                <span class="fw-bold">
-                    <span class="text-danger">*</span>
-                    <span>{{ include.pub.award }}</span>
-                </span>
-                {% endif %}
             </div>
+            {%- if include.pub.tier or include.pub.award or include.pub.demo %}
+            <div class="pub-chips">
+                {%- case include.pub.tier -%}
+                {%- when 'A*' %}<span class="pub-tier pub-tier-a-star">CORE A* conference</span>
+                {%- when 'A' %}<span class="pub-tier pub-tier-a">CORE A conference</span>
+                {%- when 'Q1' %}<span class="pub-tier pub-tier-q1">Scimago Q1 journal</span>
+                {%- endcase %}
+                {%- if include.pub.award %}<span class="pub-tier pub-award">{{ include.pub.award }}</span>{% endif %}
+                {%- if include.pub.demo %}<span class="pub-tier pub-demo">demo paper</span>{% endif %}
+            </div>
+            {%- endif %}
         </div>
         <div class="col-12 col-md-2">
             <div class="supplementary text-md-center">

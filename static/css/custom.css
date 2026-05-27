@@ -133,3 +133,44 @@ a:hover {
 .pub-title {
     font-weight: 600;
 }
+
+.pub-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em;
+    margin-top: 0.3em;
+}
+
+.pub-tier {
+    display: inline-block;
+    padding: 0.05em 0.55em;
+    border-radius: 0.4em;
+    font-size: 0.78em;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.pub-tier-a-star {
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.16);
+}
+
+.pub-tier-a {
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.16);
+}
+
+.pub-tier-q1 {
+    color: #8b5cf6;
+    background: rgba(139, 92, 246, 0.16);
+}
+
+.pub-award {
+    color: #f43f5e;
+    background: rgba(244, 63, 94, 0.16);
+}
+
+.pub-demo {
+    color: #94a3b8;
+    background: rgba(148, 163, 184, 0.16);
+}

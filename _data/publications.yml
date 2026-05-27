@@ -34,7 +34,7 @@
     highlight: true
   - name: Simon Razniewski
     highlight: false
-  venue: arXiv preprint, 2025
+  venue: preprint, 2025
   venue_style: italic
   links:
   - label: paper
@@ -55,9 +55,9 @@
     highlight: false
   - name: Simon Razniewski
     highlight: false
-  venue: AAAI 2026 (demo paper)
+  venue: AAAI 2026
   venue_style: italic
-  acceptance_rate: 28%
+  demo: true
   links:
   - label: paper
     url: https://arxiv.org/pdf/2507.05740
@@ -76,8 +76,9 @@
     highlight: false
   - name: Simon Razniewski
     highlight: false
-  venue: ISWC 2025 (demo paper)
+  venue: ISWC 2025
   venue_style: italic
+  demo: true
   award: best demo award
   links:
   - label: paper
@@ -98,7 +99,7 @@
     highlight: false
   venue: ACL 2025
   venue_style: bold
-  acceptance_rate: 20%
+  tier: "A*"
   links:
   - label: paper
     url: https://arxiv.org/pdf/2411.04920
@@ -131,7 +132,7 @@
     highlight: false
   venue: CIKM 2024
   venue_style: bold
-  acceptance_rate: 23%
+  tier: "A"
   links:
   - label: paper
     url: https://arxiv.org/pdf/2402.10689.pdf
@@ -153,7 +154,7 @@
     highlight: false
   venue: WWW 2023
   venue_style: bold
-  acceptance_rate: 19%
+  tier: "A*"
   award: best paper nomination
   links:
   - label: paper
@@ -176,8 +177,9 @@
     highlight: false
   - name: Gerhard Weikum
     highlight: false
-  venue: WSDM 2023 (demo paper)
+  venue: WSDM 2023
   venue_style: italic
+  demo: true
   links:
   - label: paper
     url: https://dl.acm.org/doi/10.1145/3539597.3573027
@@ -195,6 +197,7 @@
     highlight: false
   venue: IEEE TKDE 2023
   venue_style: bold
+  tier: "Q1"
   links:
   - label: paper
     url: https://arxiv.org/pdf/2112.04596.pdf
@@ -227,8 +230,9 @@
     highlight: false
   - name: Gerhard Weikum
     highlight: false
-  venue: ACL 2021 (demo paper)
+  venue: ACL 2021
   venue_style: italic
+  demo: true
   links:
   - label: paper
     url: https://arxiv.org/pdf/2105.13662.pdf
@@ -246,7 +250,7 @@
     highlight: false
   venue: WWW 2021
   venue_style: bold
-  acceptance_rate: 21%
+  tier: "A*"
   links:
   - label: paper
     url: https://arxiv.org/pdf/2011.00905.pdf
