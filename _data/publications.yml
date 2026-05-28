@@ -14,7 +14,8 @@
     highlight: false
   - name: Tuan-Phong Nguyen
     highlight: true
-  venue: preprint, 2026
+  venue: preprint
+  year: 2026
   venue_style: italic
   links:
   - label: paper
@@ -34,7 +35,8 @@
     highlight: true
   - name: Simon Razniewski
     highlight: false
-  venue: preprint, 2025
+  venue: preprint
+  year: 2025
   venue_style: italic
   links:
   - label: paper
@@ -55,7 +57,8 @@
     highlight: false
   - name: Simon Razniewski
     highlight: false
-  venue: AAAI 2026
+  venue: AAAI
+  year: 2026
   venue_style: italic
   demo: true
   links:
@@ -76,7 +79,8 @@
     highlight: false
   - name: Simon Razniewski
     highlight: false
-  venue: ISWC 2025
+  venue: ISWC
+  year: 2025
   venue_style: italic
   demo: true
   award: best demo award
@@ -97,7 +101,8 @@
     highlight: false
   - name: Simon Razniewski
     highlight: false
-  venue: ACL 2025
+  venue: ACL
+  year: 2025
   venue_style: bold
   tier: "A*"
   links:
@@ -115,6 +120,7 @@
     highlight: true
   venue: Doctoral Thesis
   venue_style: italic
+  year: 2024
   links:
   - label: text
     url: https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/40027/1/tuan-phong-nguyen-phd-thesis.pdf
@@ -130,7 +136,8 @@
     highlight: false
   - name: Gerhard Weikum
     highlight: false
-  venue: CIKM 2024
+  venue: CIKM
+  year: 2024
   venue_style: bold
   tier: "A"
   links:
@@ -152,7 +159,8 @@
     highlight: false
   - name: Gerhard Weikum
     highlight: false
-  venue: WWW 2023
+  venue: WWW
+  year: 2023
   venue_style: bold
   tier: "A*"
   award: best paper nomination
@@ -177,7 +185,8 @@
     highlight: false
   - name: Gerhard Weikum
     highlight: false
-  venue: WSDM 2023
+  venue: WSDM
+  year: 2023
   venue_style: italic
   demo: true
   links:
@@ -195,7 +204,8 @@
     highlight: false
   - name: Gerhard Weikum
     highlight: false
-  venue: IEEE TKDE 2023
+  venue: IEEE TKDE
+  year: 2023
   venue_style: bold
   tier: "Q1"
   links:
@@ -213,7 +223,8 @@
     highlight: true
   - name: Simon Razniewski
     highlight: false
-  venue: CSRR workshop @ ACL 2022
+  venue: CSRR workshop @ ACL
+  year: 2022
   venue_style: italic
   links:
   - label: paper
@@ -230,7 +241,8 @@
     highlight: false
   - name: Gerhard Weikum
     highlight: false
-  venue: ACL 2021
+  venue: ACL
+  year: 2021
   venue_style: italic
   demo: true
   links:
@@ -248,7 +260,8 @@
     highlight: false
   - name: Gerhard Weikum
     highlight: false
-  venue: WWW 2021
+  venue: WWW
+  year: 2021
   venue_style: bold
   tier: "A*"
   links:
@@ -270,7 +283,8 @@
     highlight: false
   - name: Anh-Cuong Le
     highlight: false
-  venue: VNU-JCSCE 2016
+  venue: VNU-JCSCE
+  year: 2016
   venue_style: italic
   links:
   - label: paper
@@ -283,7 +297,8 @@
     highlight: true
   - name: Anh-Cuong Le
     highlight: false
-  venue: IEEE RIVF 2016
+  venue: IEEE RIVF
+  year: 2016
   venue_style: italic
   links:
   - label: paper

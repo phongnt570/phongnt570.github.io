@@ -390,6 +390,23 @@ button {
     color: var(--muted);
 }
 
+/* Year header above each year-group. Small uppercase label that
+   sits between paper lists without competing with the "Publications"
+   section title. */
+.pub-year-group + .pub-year-group {
+    margin-top: 1.5rem;
+}
+
+.pub-year {
+    margin: 0 0 0.4rem;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
 /* ============================================================
    Site-specific: teaching
    ============================================================ */

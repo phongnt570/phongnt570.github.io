@@ -71,11 +71,17 @@ layout: default
                             <hr>
 
                             <div class="box-content">
-                                <ul class="list-unstyled">
-                                    {% for pub in site.data.publications %}
-                                    {% include publication.html pub=pub %}
-                                    {% endfor %}
-                                </ul>
+                                {%- assign by_year = site.data.publications | group_by: 'year' | sort: 'name' | reverse -%}
+                                {%- for grp in by_year %}
+                                <section class="pub-year-group" aria-labelledby="year-{{ grp.name }}">
+                                    <h3 class="pub-year" id="year-{{ grp.name }}"><time datetime="{{ grp.name }}">{{ grp.name }}</time></h3>
+                                    <ul class="list-unstyled mb-0">
+                                        {%- for pub in grp.items %}
+                                        {% include publication.html pub=pub %}
+                                        {%- endfor %}
+                                    </ul>
+                                </section>
+                                {%- endfor %}
                             </div>
                         </div>
 

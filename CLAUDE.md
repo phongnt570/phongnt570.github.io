@@ -9,7 +9,7 @@ Personal academic website for Tuan-Phong Nguyen, served at **tuan-phong.com** vi
 - [index.html](index.html) — body content only. Uses `layout: default`; all `<head>`, meta tags, JSON-LD, and `<body>` shell come from the layout. Almost everything inside is `{% include %}` calls.
 - [_layouts/default.html](_layouts/default.html) — full HTML shell. Pulls title, meta description, OG/Twitter cards, JSON-LD (Person schema with worksFor/alumniOf/sameAs) from `_data/bio.yml`. Also holds the dark-mode FOUC-prevention script and the `toggleMode()` function.
 - [_data/](_data/) — all content lives here:
-  - [publications.yml](_data/publications.yml) — every paper (title, url, authors with `highlight`, venue, optional `acceptance_rate` / `award`, links).
+  - [publications.yml](_data/publications.yml) — every paper (title, url, authors with `highlight`, `venue` *without* year, `year` as a separate field, optional `tier` / `award` / `demo`, links). The publications page groups entries by `year` (descending) and emits a `ScholarlyArticle` JSON-LD block per paper for academic search engines.
   - [bio.yml](_data/bio.yml) — name + descriptions (long for OG / JSON-LD, short for Twitter), `affiliation` (worksFor), `alumni` list (alumniOf), `social` URLs (sameAs), and the `about` paragraph rendered on the page.
   - [contact.yml](_data/contact.yml) — Contact table rows. `email` rows render with an inline `@` icon between user and domain.
   - [services.yml](_data/services.yml) — academic service entries, newest first.
@@ -33,10 +33,12 @@ Append an entry to [_data/publications.yml](_data/publications.yml) at the top (
   authors:
     - { name: Author One, highlight: false }
     - { name: Tuan-Phong Nguyen, highlight: true }
-  venue: ACL 2026
-  venue_style: bold                          # 'bold' for accepted venues, 'italic' for preprints/workshops/demos
-  acceptance_rate: 22%                        # optional
-  award: best paper nomination                # optional
+  venue: ACL                                  # venue NAME only — no year
+  year: 2026                                  # used for grouping + datePublished in JSON-LD
+  venue_style: bold                           # 'bold' for accepted venues, 'italic' for preprints/workshops/demos
+  tier: A*                                    # optional: 'A*' / 'A' / 'Q1'  → renders a colored chip
+  award: best paper nomination                # optional → another chip
+  demo: true                                  # optional → "demo paper" chip
   links:
     - { label: paper, url: https://... }
     - { label: code, url: https://... }
