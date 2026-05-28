@@ -171,11 +171,6 @@ button {
 
 .col-12 { flex: 0 0 auto; width: 100%; }
 
-@media (min-width: 768px) {
-    .col-md-2  { flex: 0 0 auto; width: 16.66666667%; }
-    .col-md-10 { flex: 0 0 auto; width: 83.33333333%; }
-}
-
 @media (min-width: 992px) {
     .col-lg-4 { flex: 0 0 auto; width: 33.33333333%; }
     .col-lg-8 { flex: 0 0 auto; width: 66.66666667%; }
@@ -194,18 +189,11 @@ button {
 .my-2 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
 .px-4 { padding-right: 1.5rem; padding-left: 1.5rem; }
 
-.d-inline { display: inline !important; }
-
 @media (min-width: 768px) {
-    .d-md-block { display: block !important; }
-    .d-md-none  { display: none !important; }
+    .d-md-none { display: none !important; }
 }
 
 .text-center { text-align: center; }
-
-@media (min-width: 768px) {
-    .text-md-center { text-align: center; }
-}
 
 .fw-bold { font-weight: 700; }
 .fst-italic { font-style: italic; }

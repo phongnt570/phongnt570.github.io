@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.data.bio.name }}</title>
     <link rel="icon" href="{{ '/static/img/favicon.svg' | relative_url }}" />
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#212529">
 
     <link rel="preload" href="{{ '/static/fonts/lora-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 
@@ -18,7 +20,7 @@
         })();
     </script>
 
-    {%- assign og_image = site.url | append: '/static/img/phong.jpg' -%}
+    {%- assign og_image = site.url | append: '/static/img/og-1200x630.jpg' -%}
     <meta name="description" content="{{ site.data.bio.description }}">
     <meta name="author" content="{{ site.data.bio.name }}">
 
@@ -27,14 +29,14 @@
     <meta property="og:title" content="{{ site.data.bio.name }}">
     <meta property="og:description" content="{{ site.data.bio.description }}">
     <meta property="og:image" content="{{ og_image }}">
-    <meta property="og:image:width" content="864">
-    <meta property="og:image:height" content="864">
-    <meta property="og:image:alt" content="{{ site.data.bio.name }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{ site.data.bio.name }} — Lecturer at VNU UET">
     <meta property="og:locale" content="en_US">
     <meta property="profile:first_name" content="{{ site.data.bio.first_name }}">
     <meta property="profile:last_name" content="{{ site.data.bio.last_name }}">
 
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ site.data.bio.name }}">
     <meta name="twitter:description" content="{{ site.data.bio.description_short }}">
     <meta name="twitter:image" content="{{ og_image }}">

@@ -6,15 +6,16 @@ job_title: Lecturer
 
 # Long form — used in <meta name="description">, og:description, JSON-LD
 description: >-
-  Tuan-Phong Nguyen (Nguyễn Tuấn Phong) is a computer scientist based in
-  Hanoi, Vietnam. He holds a PhD in Computer Science from the Max Planck
-  Institute for Informatics, where he works on commonsense knowledge
-  acquisition.
+  Tuan-Phong Nguyen (Nguyễn Tuấn Phong) is a lecturer at VNU University of
+  Engineering and Technology in Hanoi, Vietnam. He researches large language
+  models and knowledge bases, and holds a PhD in Computer Science from the
+  Max Planck Institute for Informatics.
 
 # Short form — used in twitter:description
 description_short: >-
-  Computer scientist based in Hanoi, Vietnam. PhD from Max Planck Institute
-  for Informatics; works on commonsense knowledge acquisition.
+  Lecturer at VNU University of Engineering and Technology, Hanoi.
+  Researches large language models and knowledge bases.
+  PhD from Max Planck Institute for Informatics.
 
 # Current employer — schema.org worksFor in JSON-LD
 affiliation:
@@ -28,7 +29,7 @@ alumni:
   - name: Saarland University
     url: https://saarland-informatics-campus.de/en/
   - name: Vietnam National University Hanoi
-    url: https://uet.vnu.edu.vn/
+    url: https://vnu.edu.vn/eng/
 
 # schema.org sameAs in JSON-LD — official profile URLs for this person
 social:
@@ -39,11 +40,12 @@ social:
 # Bio paragraph rendered on the page (markdown). Use kramdown's
 # {:target="_blank"} attribute for links that should open in a new tab.
 about: |
-  Tuan-Phong Nguyen (Nguyễn Tuấn Phong) is a lecturer at VNU University of
-  Engineering and Technology. His research interests include Large Language
-  Models and Knowledge Bases. He holds a Ph.D. from the
-  [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/){:target="_blank"},
+  Tuan-Phong Nguyen (<span lang="vi">Nguyễn Tuấn Phong</span>) is a lecturer
+  at VNU University of Engineering and Technology. His research interests
+  include Large Language Models and Knowledge Bases. He holds a Ph.D. from
+  the
+  [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/){:target="_blank" rel="noopener"},
   a M.Sc. from
-  [Saarland University](https://saarland-informatics-campus.de/en/){:target="_blank"},
+  [Saarland University](https://saarland-informatics-campus.de/en/){:target="_blank" rel="noopener"},
   and a B.Sc. from
-  [Vietnam National University Hanoi](https://uet.vnu.edu.vn/){:target="_blank"}.
+  [Vietnam National University Hanoi](https://uet.vnu.edu.vn/){:target="_blank" rel="noopener"}.

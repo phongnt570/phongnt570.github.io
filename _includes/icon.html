@@ -1,1 +1,1 @@
-{%- assign icon = site.data.icons[include.name] -%}<svg class="icon{% if include.size %} icon-{{ include.size }}{% endif %}{% if include.class %} {{ include.class }}{% endif %}" viewBox="{{ icon.viewbox }}" aria-hidden="true"><path d="{{ icon.path }}"/></svg>
+{%- assign icon = site.data.icons[include.name] -%}<svg class="icon{% if include.icon_size %} icon-{{ include.icon_size }}{% endif %}{% if include.class %} {{ include.class }}{% endif %}" viewBox="{{ icon.viewbox }}" aria-hidden="true"><path d="{{ icon.path }}"/></svg>

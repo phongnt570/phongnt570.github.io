@@ -175,7 +175,7 @@
     url: https://youtu.be/F4eElgjE4R8
 - id: publication_10
   title: UnCommonSense in Action! Informative Negations for Commonsense Knowledge Bases
-  url: https://dl.acm.org/doi/10.1145/3539597.3573027
+  url: https://doi.org/10.1145/3539597.3573027
   authors:
   - name: Hiba Arnaout
     highlight: false
@@ -191,7 +191,7 @@
   demo: true
   links:
   - label: paper
-    url: https://dl.acm.org/doi/10.1145/3539597.3573027
+    url: https://doi.org/10.1145/3539597.3573027
 - id: publication_7
   title: Refined Commonsense Knowledge from Large-Scale Web Contents
   url: https://arxiv.org/pdf/2112.04596.pdf

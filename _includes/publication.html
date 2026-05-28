@@ -1,7 +1,13 @@
 <li class="pub" id="{{ include.pub.id }}">
-    <a href="{{ include.pub.url | default: '#' }}"{% if include.pub.url %} target="_blank"{% endif %}>
+    {%- comment -%}Title links to pub.url if set, else falls back to the first supplementary link so the title is always clickable when there's any URL to land on.{%- endcomment -%}
+    {%- assign primary_url = include.pub.url | default: include.pub.links[0].url -%}
+    {%- if primary_url -%}
+    <a href="{{ primary_url }}" target="_blank" rel="noopener">
         <span class="pub-title">{{ include.pub.title }}</span>
     </a>
+    {%- else -%}
+    <span class="pub-title">{{ include.pub.title }}</span>
+    {%- endif %}
     <div class="authors">
         {%- for author in include.pub.authors -%}
             {% if author.highlight %}<u>{{ author.name }}</u>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
@@ -21,7 +27,7 @@
     <div class="pub-links">
         {%- for link in include.pub.links -%}
             {%- unless forloop.first %}<span class="pub-links-sep" aria-hidden="true">·</span>{% endunless %}
-            <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>
+            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
         {%- endfor -%}
     </div>
     {%- endif %}

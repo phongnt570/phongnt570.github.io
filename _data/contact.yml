@@ -3,22 +3,22 @@
 # render the label as a link to `url`.
 
 - icon: envelope
-  size: xs
+  icon_size: xs
   email:
     user: tuanphong
     domain: vnu.edu.vn
 
 - icon: graduation-cap
-  size: xs
+  icon_size: xs
   label: Google Scholar
   url: https://scholar.google.com/citations?user=JXZlcpwAAAAJ&hl=en
 
 - icon: linkedin
-  # No size override — the original markup used full 1em here.
+  # No icon_size override — the original markup used full 1em here.
   label: LinkedIn
   url: https://www.linkedin.com/in/tuanphongnguyen/
 
 - icon: github
-  size: xs
+  icon_size: xs
   label: "@phongnt570"
   url: https://github.com/phongnt570
