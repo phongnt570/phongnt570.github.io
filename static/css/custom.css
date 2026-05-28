@@ -406,3 +406,64 @@ button {
 .teaching-meta {
     color: var(--muted);
 }
+
+/* ============================================================
+   Focus indicator — branded outline for keyboard users, replacing
+   the default browser focus ring. Uses :focus-visible so mouse
+   clicks don't draw it.
+   ============================================================ */
+:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* ============================================================
+   Print stylesheet — forces a light, monochrome layout regardless
+   of the current theme, expands external link URLs inline, and
+   tries to keep each publication / teaching entry on a single page.
+   ============================================================ */
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+        font-size: 10.5pt;
+    }
+
+    button {
+        display: none !important;
+    }
+
+    a,
+    a:visited {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    /* expand href next to each external link so a printed page still
+       carries enough information to reach the source */
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.85em;
+        font-weight: normal;
+        word-break: break-all;
+    }
+
+    .pub-tier,
+    .teaching-role {
+        background: #fff !important;
+        color: #000 !important;
+        border: 1px solid #000;
+    }
+
+    .pub,
+    .teaching-list li,
+    .service-group {
+        page-break-inside: avoid;
+    }
+
+    h1,
+    h2 {
+        page-break-after: avoid;
+    }
+}

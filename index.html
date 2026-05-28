@@ -43,9 +43,9 @@ layout: default
 
                                     <div class="col-12">
                                         <div class="text-center">
-                                            <button onclick="toggleMode()" class="btn btn-sm" title="Switch mode"
-                                                type="button">
-                                                <span class="text-secondary" id="toggle-model-text">
+                                            <button onclick="toggleMode()" class="btn btn-sm" type="button"
+                                                aria-label="Toggle dark mode" title="Toggle dark mode">
+                                                <span class="text-secondary" aria-hidden="true">
                                                     {% include icon.html name="sun" class="sun-icon" %}
                                                     {% include icon.html name="moon" class="moon-icon" %}
                                                 </span>
