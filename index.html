@@ -109,7 +109,7 @@ layout: default
                 <hr>
 
                 <div id="footer" class="text-secondary font-size-9">
-                    <span>Copyright © 2020-{{ 'now' | date: '%Y' }}</span>
+                    <span>Copyright © <time datetime="2020">2020</time>–<time datetime="{{ 'now' | date: '%Y' }}">{{ 'now' | date: '%Y' }}</time></span>
                     <span>•</span>
                     <span>{{ site.data.bio.name }}</span>
                 </div>

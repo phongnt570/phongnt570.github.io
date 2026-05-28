@@ -8,7 +8,17 @@
         {%- endfor -%}
     </div>
     <div class="venue-line">
-        <span class="venue {% if include.pub.venue_style == 'bold' %}fw-bold{% elsif include.pub.venue_style == 'italic' %}fst-italic{% endif %}">{{ include.pub.venue }}</span>
+        {%- comment -%}
+        Wrap a trailing 4-digit year in <time datetime="YYYY"> so screen
+        readers and structured-data parsers recognise the publication
+        date. We detect the year as the last 4 chars of the venue string
+        when they start with '1' or '2' — good enough for any venue
+        between 1000 and 2999 CE.
+        {%- endcomment -%}
+        {%- assign venue_str = include.pub.venue -%}
+        {%- assign year_candidate = venue_str | slice: -4, 4 -%}
+        {%- assign first_char = year_candidate | slice: 0 -%}
+        <span class="venue {% if include.pub.venue_style == 'bold' %}fw-bold{% elsif include.pub.venue_style == 'italic' %}fst-italic{% endif %}">{% if first_char == '1' or first_char == '2' %}{%- assign prefix_len = venue_str.size | minus: 4 -%}{{ venue_str | slice: 0, prefix_len }}<time datetime="{{ year_candidate }}">{{ year_candidate }}</time>{% else %}{{ venue_str }}{% endif %}</span>
         {%- case include.pub.tier -%}
         {%- when 'A*' %}<span class="pub-tier pub-tier-a-star">CORE A* conference</span>
         {%- when 'A' %}<span class="pub-tier pub-tier-a">CORE A conference</span>

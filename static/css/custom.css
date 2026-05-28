@@ -419,6 +419,30 @@ button {
 }
 
 /* ============================================================
+   Skip link — first focusable element on the page. Hidden off the
+   top of the viewport until a keyboard user tabs into it, then it
+   reveals itself so they can jump past the sidebar straight to the
+   <main> content.
+   ============================================================ */
+.skip-link {
+    position: fixed;
+    top: -3rem;
+    left: 0.5rem;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg);
+    color: var(--fg);
+    border: 2px solid var(--bs-primary);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: top 0.15s ease-out;
+}
+
+.skip-link:focus {
+    top: 0.5rem;
+}
+
+/* ============================================================
    Print stylesheet — forces a light, monochrome layout regardless
    of the current theme, expands external link URLs inline, and
    tries to keep each publication / teaching entry on a single page.
