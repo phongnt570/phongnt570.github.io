@@ -1,3 +1,22 @@
+- id: publication_20
+  title: 'GPTKB 2.0: Direct Construction of Disambiguated Knowledge Bases from Large Language Models'
+  url: https://arxiv.org/pdf/2608.03729
+  authors:
+  - name: Yujia Hu
+    highlight: false
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  venue: preprint
+  year: 2026
+  venue_style: italic
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2608.03729
+  - label: website
+    url: https://gptkb.org/
+
 - id: publication_19
   title: 'Epistemic Twins: Enabling a Symbolic Science of Language Model Knowledge'
   url: https://zenodo.org/records/19910437/files/Epistemic_Twins.pdf
