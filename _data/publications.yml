@@ -1,3 +1,23 @@
+- id: publication_21
+  title: 'GPTKB 2.0: Browsing, Querying, and Auditing a Disambiguated LLM-Derived Knowledge Base'
+  url: https://arxiv.org/pdf/2608.06992
+  authors:
+  - name: Yujia Hu
+    highlight: false
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  - name: Simon Razniewski
+    highlight: false
+  venue: preprint
+  year: 2026
+  venue_style: italic
+  demo: true
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2608.06992
+  - label: website
+    url: https://gptkb.org/
+
 - id: publication_20
   title: 'GPTKB 2.0: Direct Construction of Disambiguated Knowledge Bases from Large Language Models'
   url: https://arxiv.org/pdf/2608.03729
