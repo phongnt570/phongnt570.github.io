@@ -1,3 +1,22 @@
+- id: publication_22
+  title: 'REAP: Relation-Aware Elicitation and Parsing for Closed-Book Knowledge Base Construction from LLMs'
+  url: https://arxiv.org/pdf/2608.10963
+  authors:
+  - name: Thanh-Dan Bui
+    highlight: false
+  - name: Thanh-Trung Do
+    highlight: false
+  - name: Tuan-Phong Nguyen
+    highlight: true
+  venue: preprint
+  year: 2026
+  venue_style: italic
+  links:
+  - label: paper
+    url: https://arxiv.org/pdf/2608.10963
+  - label: code
+    url: https://github.com/yammdd/AKBC-Shared-Task-2026
+
 - id: publication_21
   title: 'GPTKB 2.0: Browsing, Querying, and Auditing a Disambiguated LLM-Derived Knowledge Base'
   url: https://arxiv.org/pdf/2608.06992
