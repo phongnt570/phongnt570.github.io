@@ -27,7 +27,7 @@
     highlight: true
   - name: Simon Razniewski
     highlight: false
-  venue: preprint
+  venue: EMNLP
   year: 2026
   venue_style: italic
   demo: true
