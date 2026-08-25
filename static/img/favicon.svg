@@ -1,20 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-    <rect width="64" height="64" rx="14" fill="#089db3"/>
-    <g stroke="white" stroke-width="5" stroke-linecap="round">
-        <!-- Stem -->
-        <line x1="20" y1="14" x2="20" y2="50"/>
-        <!-- Bowl outline -->
-        <line x1="20" y1="14" x2="38" y2="14"/>
-        <line x1="38" y1="14" x2="46" y2="24"/>
-        <line x1="46" y1="24" x2="38" y2="34"/>
-        <line x1="38" y1="34" x2="20" y2="34"/>
-    </g>
-    <g fill="white">
-        <circle cx="20" cy="14" r="6"/>
-        <circle cx="20" cy="34" r="6"/>
-        <circle cx="20" cy="50" r="6"/>
-        <circle cx="38" cy="14" r="6"/>
-        <circle cx="46" cy="24" r="6"/>
-        <circle cx="38" cy="34" r="6"/>
-    </g>
+  <defs>
+    <linearGradient id="chc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b3440"/>
+      <stop offset="1" stop-color="#161c24"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#chc)"/>
+  <g transform="translate(11.94,50.01) scale(0.0513,-0.0513)"><path d="M297 702Q394 702 457.5 679.5Q521 657 553.0 613.5Q585 570 585 506Q585 467 570.0 424.5Q555 382 518.0 345.5Q481 309 415.0 286.0Q349 263 246 263Q241 263 229.0 263.0Q217 263 207 264L199 119Q198 92 196.0 72.5Q194 53 192 40Q208 41 223.0 42.0Q238 43 253.5 43.5Q269 44 284 45L282 0H41L43 33Q81 35 96.0 50.5Q111 66 114.0 93.5Q117 121 118 156L141 588Q143 608 144.5 626.5Q146 645 148 660Q130 659 111.5 658.0Q93 657 75 656L78 700Q131 701 185.0 701.5Q239 702 297 702ZM293 663Q262 663 247.0 649.5Q232 636 228.0 610.5Q224 585 222 549L209 306Q228 304 242.0 303.5Q256 303 274 303Q331 303 379.5 325.0Q428 347 458.0 389.0Q488 431 491 489Q493 536 480.0 569.5Q467 603 440.5 623.5Q414 644 376.5 653.5Q339 663 293 663Z" fill="#ffffff" stroke="#ffffff" stroke-width="16" stroke-linejoin="round" /></g>
+  <circle cx="48.45" cy="46.81" r="3.4" fill="#35c8dd"/>
 </svg>
