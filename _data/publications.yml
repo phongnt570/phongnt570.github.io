@@ -8,7 +8,7 @@
     highlight: false
   - name: Tuan-Phong Nguyen
     highlight: true
-  venue: preprint
+  venue: AKBC shared task @ EMNLP
   year: 2026
   venue_style: italic
   links:
@@ -68,19 +68,19 @@
     highlight: false
   - name: Yujia Hu
     highlight: false
-  - name: Josua Kowalzik
-    highlight: false
   - name: Tuan-Phong Nguyen
     highlight: true
-  venue: preprint
+  venue: AKBC workshop @ EMNLP
   year: 2026
   venue_style: italic
   links:
   - label: paper
     url: https://zenodo.org/records/19910437/files/Epistemic_Twins.pdf
+  - label: openreview
+    url: https://openreview.net/forum?id=wZhtmk3YlX
 
 - id: publication_18
-  title: 'Mining the Mind: What 100M Beliefs Reveal About Frontier LLM Knowledge'
+  title: 'Auditing a KB Elicitation of Frontier LLM Knowledge: A Multi-dimensional Analysis of GPTKB v1.5'
   url: https://arxiv.org/pdf/2510.07024
   authors:
   - name: Shrestha Ghosh
@@ -93,12 +93,14 @@
     highlight: true
   - name: Simon Razniewski
     highlight: false
-  venue: preprint
-  year: 2025
+  venue: AKBC workshop @ EMNLP
+  year: 2026
   venue_style: italic
   links:
   - label: paper
     url: https://arxiv.org/pdf/2510.07024
+  - label: openreview
+    url: https://openreview.net/forum?id=05UWSywnTM
   - label: website
     url: https://gptkb.org/
 - id: publication_16
