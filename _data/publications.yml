@@ -68,6 +68,8 @@
     highlight: false
   - name: Yujia Hu
     highlight: false
+  - name: Josua Kowalzik
+    highlight: false
   - name: Tuan-Phong Nguyen
     highlight: true
   venue: AKBC workshop @ EMNLP
@@ -76,8 +78,6 @@
   links:
   - label: paper
     url: https://zenodo.org/records/19910437/files/Epistemic_Twins.pdf
-  - label: openreview
-    url: https://openreview.net/forum?id=wZhtmk3YlX
 
 - id: publication_18
   title: 'Auditing a KB Elicitation of Frontier LLM Knowledge: A Multi-dimensional Analysis of GPTKB v1.5'
@@ -99,8 +99,6 @@
   links:
   - label: paper
     url: https://arxiv.org/pdf/2510.07024
-  - label: openreview
-    url: https://openreview.net/forum?id=05UWSywnTM
   - label: website
     url: https://gptkb.org/
 - id: publication_16
