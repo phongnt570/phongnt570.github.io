@@ -47,9 +47,9 @@
     highlight: true
   - name: Simon Razniewski
     highlight: false
-  venue: preprint
+  venue: AACL
   year: 2026
-  venue_style: italic
+  venue_style: bold
   links:
   - label: paper
     url: https://arxiv.org/pdf/2608.03729
