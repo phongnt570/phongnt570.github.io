@@ -38,7 +38,7 @@
     url: https://gptkb.org/
 
 - id: publication_20
-  title: 'Direct Construction of Disambiguated Knowledge Bases from Large Language Models'
+  title: 'Constructing Disambiguated Knowledge Bases from Large Language Models at Scale'
   url: https://arxiv.org/pdf/2608.03729
   authors:
   - name: Yujia Hu
